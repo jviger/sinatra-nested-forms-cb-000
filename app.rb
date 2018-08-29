@@ -6,7 +6,7 @@ module FormsLab
     # code other routes/actions here
     
     post "/pirates" do 
-      @pirate = Pirate.new(params[:name], params[:height], params[:weight])
+      @pirate = Pirate.new(params[:pirate])
       
       erb :'pirates/show'
     end
